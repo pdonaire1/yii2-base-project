@@ -12,7 +12,6 @@ CREATE TABLE IF NOT EXISTS `user` (
 `id` int(11) NOT NULL,
   `email` varchar(250) NOT NULL,
   `password` varchar(250) NOT NULL,
-  `type` int(11) DEFAULT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 
 ALTER TABLE `user`
