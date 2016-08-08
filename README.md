@@ -1,3 +1,29 @@
+Yii 2 DataBase User model
+=========================
+```
+CREATE TABLE IF NOT EXISTS `user` (
+  `access_token` varchar(100) NOT NULL,
+  `firstName` varchar(50) NOT NULL,
+  `lastName` varchar(50) NOT NULL,
+  `username` varchar(50) NOT NULL,
+  `authKey` varchar(250) NOT NULL,
+  `is_active` tinyint(1) NOT NULL DEFAULT '0',
+  `is_admin` tinyint(1) NOT NULL DEFAULT '0',
+`id` int(11) NOT NULL,
+  `email` varchar(250) NOT NULL,
+  `password` varchar(250) NOT NULL,
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+
+ALTER TABLE `user`
+ ADD PRIMARY KEY (`id`);
+ 
+ALTER TABLE `user`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
+
+
+```
+
+
 Yii 2 Basic Project Template
 ============================
 
